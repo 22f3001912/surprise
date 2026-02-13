@@ -1,7 +1,7 @@
 // ============================================
 // CONFIGURATION
 // ============================================
-const TARGET_DATE = new Date('February 13, 2026 22:17:00').getTime();
+const TARGET_DATE = new Date('February 13, 2026 22:25:00').getTime();
 const GAME_DURATION = 30; // seconds
 const TARGET_SCORE = 15;
 const HEART_EMOJIS = ['❤️', '💖', '💗', '💕', '💓', '🩷', '💘'];
