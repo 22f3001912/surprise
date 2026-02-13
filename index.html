@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counting Down to Us</title>
+    <title>Counting Down to Us ❤️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background-animation" id="background-animation"></div>
-    
-    <div class="container">
-        <h1>A Little surprise for you</h1>
+
+    <!-- ========== PHASE 1: COUNTDOWN ========== -->
+    <div class="container" id="countdown-section">
+        <h1>A Little Surprise for You</h1>
         <p class="subtitle">Until February 14, 2026</p>
-        
+
         <div class="countdown">
             <div class="time-block">
                 <span id="days">00</span>
@@ -38,6 +43,68 @@
         <p class="message">Every second brings me closer to you ❤️</p>
     </div>
 
+    <!-- ========== PHASE 2: TRANSITION ========== -->
+    <div class="transition-overlay" id="transition-overlay">
+        <div class="transition-content">
+            <div class="big-heart-burst" id="big-heart-burst">❤️</div>
+            <h2 class="transition-text" id="transition-text">The wait is over...</h2>
+            <p class="transition-sub" id="transition-sub">But first, a little game for you 💕</p>
+            <button class="play-btn" id="play-btn">Let's Play! 🎮</button>
+        </div>
+    </div>
+
+    <!-- ========== PHASE 3: GAME ========== -->
+    <div class="game-section" id="game-section">
+        <div class="game-header">
+            <div class="game-title-area">
+                <h2 class="game-title">Catch My Love</h2>
+                <p class="game-instruction">Click the falling hearts to collect love!</p>
+            </div>
+            <div class="game-stats">
+                <div class="score-display">
+                    <span class="score-icon">💖</span>
+                    <span id="score">0</span>
+                    <span class="score-total">/ <span id="target-score">15</span></span>
+                </div>
+                <div class="timer-display">
+                    <span class="timer-icon">⏰</span>
+                    <span id="game-timer">30</span>s
+                </div>
+            </div>
+        </div>
+        <div class="love-progress-bar">
+            <div class="love-progress-fill" id="love-progress-fill"></div>
+            <span class="progress-label">Love Meter</span>
+        </div>
+        <div class="game-arena" id="game-arena"></div>
+    </div>
+
+    <!-- ========== PHASE 4: SURPRISE REVEAL ========== -->
+    <div class="reveal-section" id="reveal-section">
+        <div class="confetti-canvas" id="confetti-canvas"></div>
+        <div class="reveal-container">
+            <div class="sparkle-ring"></div>
+            <h1 class="reveal-title">You Did It! 🎉</h1>
+            <div class="reveal-card">
+                <div class="reveal-emoji">✈️🛕</div>
+                <h2 class="reveal-destination">We're going to</h2>
+                <h1 class="reveal-place">Ujjain!</h1>
+                <div class="reveal-date-box">
+                    <span class="reveal-calendar">📅</span>
+                    <span class="reveal-date">April 2nd, 2026</span>
+                </div>
+                <div class="reveal-divider"></div>
+                <p class="reveal-message">And the best part?</p>
+                <h2 class="reveal-coming">I'm coming to meet you! 💕</h2>
+                <div class="reveal-hearts-row">
+                    <span>💖</span><span>💗</span><span>💓</span><span>💞</span><span>💝</span>
+                </div>
+            </div>
+            <p class="reveal-footer">Can't wait to make memories with you ❤️</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
